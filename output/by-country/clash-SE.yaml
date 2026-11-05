@@ -19,7 +19,7 @@ proxies:
       Host: 5.178.109.174
 - name: 🇸🇪 SE 02 - xiaohe
   type: vless
-  server: se3.shtil.io
+  server: 194.104.94.141
   port: 443
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
   udp: true
@@ -34,7 +34,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 194.104.94.141
+  servername: se3.shtil.io
 proxy-groups:
 - name: PROXIES
   type: select
