@@ -18,7 +18,7 @@ proxies:
   ws-opts:
     path: /arki
     headers:
-      Host: 47.244.120.197
+      Host: ''
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   type: vmess
   server: 156.245.232.239
@@ -55,21 +55,7 @@ proxies:
   ws-opts:
     path: /arki
     headers:
-      Host: ''
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  type: vless
-  server: 45.133.73.167
-  port: 443
-  uuid: 0fc0ded7-32b3-4e36-a623-6e7670225247
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: zmxoo.de5.net
-  network: ws
-  ws-opts:
-    path: /html/order/torrent
-    headers:
-      Host: zmxoo.de5.net
+      Host: 47.244.120.197
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,7 +65,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -89,6 +74,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 rules:
 - MATCH,PROXIES
